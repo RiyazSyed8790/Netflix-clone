@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap');
+*,*::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    background-color: black;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    height: auto;    
+}
+
+
+.hero-section{
+    background-color: black;
+    height: 100vh;
+    background-image: url("./posternew.jpg");
+    background-size: cover;
+    border-bottom: 8px solid rgb(94, 92, 92);
+}
+.hero-section img{
+    width: 11.5rem;
+    height: auto;
+    border-radius: 15px;
+    margin: 1.5rem 3rem;
+}
+.hero-section nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.hero-section ul{
+    margin: 2.25rem 2rem;
+}
+.hero-section ul li{
+    /*list-style-type: none;*/
+    display: inline;
+    padding: 0rem 1.5rem;
+    
+    
+}
+
+.hero-section ul li select{
+    
+    font-size: 1rem;
+    height: 1.15rem;
+    background-color:transparent;
+    color: whitesmoke;
+    background-color:black;
+    /*border: 2px solid whitesmoke;*/
+    border-style: none;
+}
+.hero-section ul li select:focus{
+   outline: none;
+}
+ 
+.drop-down{
+   border: whitesmoke 1.5px solid;
+   padding: 0.375rem 0rem;
+   padding-left: 0.5rem;
+   width: 5rem;
+   height: 2rem;
+   background-color: black;
+   color: whitesmoke;
+}
+
+.hero-section ul li button{
+    width: 5rem;
+    height: 2rem;
+    font-size: 1rem;
+    background-color: red;
+    color: whitesmoke;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+.hero-section ul li button:hover{
+    cursor: pointer;
+}
+.fa-globe{
+    color:whitesmoke;
+  
+}
+/*Hero-setion-content styling start*/
+.hero-section-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-align: center;
+    /*border: 2px solid wheat;*/
+    
+}
+.hero-info{
+    margin: 8.75rem 0;
+}
+.hero-title{
+    /*border: 2px solid white;*/
+    width: 47.5rem;
+}
+.hero-title header{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    
+}
+.hero-title h3{
+    font-size: 1.75rem;
+    margin-bottom: 1.75rem;
+    font-weight: 400;
+}
+
+.hero-email header{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    text-align: center;
+}
+.hero-email input{
+    /*width: 35rem;
+    height: 4.5rem;*/
+    width: 100%;
+    height: 100%;
+    padding: 0 0.55rem;
+    font-size: 1rem;
+}
+.hero-email input:focus{
+    outline: none;
+}
+.email-bar{
+    position: relative;
+    width: 35rem;
+}
+.email-label{
+    color: black;
+    position: absolute;
+    left: 2%;
+    opacity: 0.75;
+    top: 33%;
+    transition: all 0.25s ease-in-out;
+    
+}
+/*.radio-btn{
+    position: absolute;
+}
+#check:checked ~ .email-label{
+    top: 0.2rem;
+    transition: all 0.25s ease-in-out;
+}
+.email-input:placeholder-shown.email-input:not(:focus){
+    left: 2%;
+    top: 33%;
+    transition: all 0.25s ease-in-out;
+}*/
+.wrapper{
+    display: flex;
+}
+.hero-email input:focus + .email-label{
+    top: 0.2rem;
+    transition: all 0.25s ease-in-out;
+    font-size: 0.75rem;
+}
+.email-input:not(:placeholder-shown).email-input:not(:focus) + .email-label{
+    top: 0.2rem;
+    font-size: 0.75rem;
+}
+
+.input-section{
+    display: flex;
+    max-height: 4rem;
+    /*overflow-y: hidden;*/
+}
+.hero-email button{
+    width: 12.5rem;
+    height: 4rem;
+    overflow:hidden;
+    font-size: 1.75rem;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgb(240, 8, 8) ;
+    color: whitesmoke;
+    border-color: rgb(240, 8, 8);    
+    
+}
+.hero-email button:hover{
+    cursor: pointer;
+    background-color: red;
+}
+/*Hero section styling complete*/
+/*Feature section styling start*/
+.feature-section li{
+    border-bottom:8px solid rgb(94, 92, 92) ;
+}
+.feature-1{
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    margin: 2.5rem 7.5rem;
+    
+    
+}
+.feature-content{
+    /*border: 2px solid whitesmoke;*/
+    width: 39rem;
+    height: auto;
+    display: flex;
+    align-items: center;
+    
+}
+.feature-content header{
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+}
+.feature-content h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    
+}
+.tv-image{
+    width: 35rem;
+    height: auto;
+    /*border: 2px whitesmoke solid;*/
+}
+.st-image{
+    width: 30rem;
+    height: auto;
+    /*border: 2px whitesmoke solid;*/
+}
+.video-content{
+    position: relative;
+    
+}
+.v1{
+    position: absolute;
+    bottom: 25%;
+    left: 13%;
+    /*width: 71%;;
+    height: 66%;*/
+    width: 100%;
+    height: 100%;
+    max-width: 73%;
+    max-height: 54%;
+    z-index: -2;
+}
+.dload-section{
+    position: relative;
+    
+}
+.dload-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    width: 25rem;
+    height: 7.5rem;
+    border-radius: 15px;
+    border: 2px solid rgb(94, 92, 92);
+    bottom: 2%;
+    left: 7.5%;
+    z-index: 2;
+    background-color: black;
+    position: absolute;
+}
+.dload-content{
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0.75rem;
+}
+.st-poster{
+    width: 5rem;
+    height: auto;
+    padding-right: 0.5rem;
+    margin: 0.5rem 0.75rem;
+}
+.gif{
+    width: 5rem;
+    height: auto;
+}
+.video-content2{
+    position: relative;
+}
+.v2{
+    position: absolute;
+    left: 15.65%;
+    width: 100%;
+    bottom: 44%;
+    height: auto;
+    max-width: 67.5%;
+    max-height: 50%;
+    z-index: -2;
+}
+/*FAQ section styling*/
+.faq-section{
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+.q1{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.faq-content{
+   /*width: 45rem;*/
+   width: 50%;
+   margin: 2.5rem 0;
+}
+.faq-content header{
+    font-size: 3rem;
+    font-weight: 700;
+
+}
+.faq-content .q1-section{
+    margin: 0.75rem 0;
+    font-size: 1.75rem;
+    font-weight:lighter;
+    background-color: rgb(44, 42, 42);
+    padding: 0.75rem 1rem;
+}
+.q1-ans{
+    display: none;
+    text-align: left;
+    font-size: 1.75rem;
+    transition: all ease-in-out 0.75s;
+    background-color: rgb(44, 42, 42);
+    border-top: 3px solid black;
+    color: whitesmoke;
+    padding: 1rem 0rem;
+}
+
+.email2{
+    display: flex;
+    justify-content: center;
+    margin: 1.25rem 0;  
+}
+/*Contact info section start*/
+.contact-section{
+    text-align: left;
+    border-top: 8px solid rgb(94, 92, 92);
+    margin: 5rem 0;
+    opacity: 0.5;
+}
+.contact{
+    margin: 4rem 15rem;
+    text-align: left;
+}
+.contact-section header{
+    margin:0rem 5rem ;
+    margin-bottom: 1.5rem;
+}
+.contact-content{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 0.5rem 2rem;
+}
+.list1 {
+    /*display: flex;*/
+    color: whitesmoke;
+    text-align:center;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+} 
+.list1 li{
+    list-style-type: none;
+    margin: 0 3rem;
+    text-align: left;
+    padding: 0.5rem 0rem;
+    
+}
+.select-bar{
+    margin: 0rem 5rem;
+    border: 2px solid whitesmoke;
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+}
+.select-bar select{
+    font-size: 1.2rem;
+    margin-left: 0.75rem;
+    border: none;
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    background-color: black;
+    color: whitesmoke;
+}
+.select-bar i{
+    color: rgb(94, 92, 92);
+}
+.select-bar select:focus{
+    outline: none;
+}
+/*Responsive stylling start*/
+@media(max-width:1010px){
+    /*.hero-email input{
+        width: 75%;
+    }*/
+    .email-input{
+        width: 75%;
+    }
+    .input-section{
+        width: 75%;
+    }
+    .email-bar{
+        width: 75%;
+        height: 3.25rem;
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+    }
+    .hero-section{
+        height: auto;
+    } 
+    .hero-email button{
+        width: 37.5%;
+        margin-top: 1rem;
+    }
+    .input-section{
+        display: block;
+        float: none;
+        width: 100%;
+        overflow-y: visible;
+    }  
+    .feature-1{
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+    .feature-content{
+       display: block;
+       float: none;
+       width: 100%;
+    }
+    .dload-box{
+        left: 24%;
+        text-align: left;
+    }
+    .feature-content header{
+        font-size: 3rem;
+        margin:0 1rem;
+        margin-bottom: 0.5rem;
+
+    }
+    .feature-content h3{
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 0 1rem;
+        
+    }
+    .faq-content{
+        width: 80%;
+        
+     }
+     .email2 button{
+        width: 37.5%;
+        margin-top: 1rem;
+    }
+    .but{
+        display: flex;
+        justify-content: center;
+    }
+    /*.contact-content{
+        display: block;
+        float: none;
+        width: 100%;
+    }*/
+    /*.list1{
+        display: block;
+        float: none;
+        width: 100%;
+    }*/
+    .contact{
+        margin: 4rem 2rem;
+        text-align: left;
+    }
+    .list1 li{
+        list-style-type: none;
+        margin: 0 0.5rem;
+        text-align: left;
+        padding: 0.5rem 0rem;
+        
+    }
+    .contact-section header{
+        margin: 0 2.5rem;
+        text-align: left;
+    }
+    .select-bar{
+        margin: 0rem 2.5rem;
+        border: 2px solid whitesmoke;
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+    }
+    
+    
+}
+@media(max-width:764px){
+    .hero-title{
+        text-align: center;
+        width: 100%;
+    }
+    .faq-content{
+        width: 100%;
+        
+     }
+}
+@media(max-width:688px){
+    .hero-email button{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width:630px){
+    .hero-section img{
+        width: 10rem;
+        height: auto;
+        border-radius: 15px;
+        margin: 1.5rem 1.5rem;
+    }
+    .input-section{
+        display: block;
+        float: none;
+        width: 100%;
+    }
+}
+@media(max-width:560px){
+    .hero-section img{
+        width: 10rem;
+        height: auto;
+        border-radius: 15px;
+        margin-left: 1.5rem;
+    }
+    .hero-section ul{
+        margin: 2.25rem 0.5rem;
+    }
+}
+@media(max-width:508px){
+    .hero-section img{
+        width: 9.5rem;
+        height: auto;
+        border-radius: 15px;
+        margin-left: 1.75rem;
+    }
+    .hero-section ul{
+        margin: 2.25rem 0.25rem;
+    }
+    html{
+        zoom: 75%;
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+    .tv-image{
+        width: 27.5rem;
+        height: auto;
+        /*border: 2px whitesmoke solid;*/
+    }
+    .st-image{
+        width: 27.5rem;
+        height: auto;
+        /*border: 2px whitesmoke solid;*/
+    }
+    .dload-box{
+        left: 12.5%;
+        text-align: left;
+    }
+    .contact{
+        margin: 4rem 1rem;
+        text-align: left;
+    }
+    .list1{
+        padding: 0 1.5rem;
+        text-align: center;
+    }
+    .list1 li{
+        list-style-type: none;
+        margin: 0 0.5rem;
+        text-align: left;
+        padding: 0.5rem 0rem;
+        
+    }
+    .contact-section header{
+        margin: 0 4rem;
+        text-align: left;
+    }
+    .select-bar{
+        margin: 0rem 4rem;
+        border: 2px solid whitesmoke;
+        font-size: 1.2rem;
+        padding: 1rem 1rem;
+    }
+
+}
+@media(max-width:380px){
+    html{
+        zoom: 70%;
+    }
+    
+}
+@media(max-width:350px){
+    .hero-section img{
+        width: 9.5rem;
+        height: auto;
+        border-radius: 15px;
+        margin-left: 1rem;
+    }
+    .hero-section ul{
+        margin: 2.25rem 0rem;
+    }
+    .hero-section ul li{
+        /*list-style-type: none;*/
+        display: inline;
+        padding: 0rem 1rem;        
+    }
+    .dload-box{
+        left: 6.25%;
+        text-align: left;
+    }
+    .q1-section{
+        font-size: 1rem;
+    }
+}
